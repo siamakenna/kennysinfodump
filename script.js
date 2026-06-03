@@ -5,7 +5,7 @@ const year = document.querySelector("[data-year]");
 const butterflyCursor = document.querySelector(".butterfly-cursor");
 const routeSections = Array.from(document.querySelectorAll("main > section"));
 const navAnchors = Array.from(document.querySelectorAll(".nav-links a, .hero-actions a, .portal-grid a"));
-const secretStatus = document.querySelector(".secret-status");
+const secretStatus = Array.from(document.querySelectorAll(".secret-status"));
 const secretButtons = Array.from(document.querySelectorAll("[data-secret]"));
 const routeGroups = {
   home: ["home", "ticker", "photos", "portal"],
@@ -139,9 +139,9 @@ document.querySelectorAll("[data-sdk-section]").forEach((section) => {
 
 const unlockedSecrets = new Set();
 const updateSecretStatus = () => {
-  if (secretStatus) {
-    secretStatus.textContent = `hidden gems: ${unlockedSecrets.size} / ${secretButtons.length}`;
-  }
+  secretStatus.forEach((status) => {
+    status.textContent = `hidden gems: ${unlockedSecrets.size} / ${secretButtons.length}`;
+  });
 };
 
 secretButtons.forEach((button, index) => {
