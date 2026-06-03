@@ -3265,117 +3265,452 @@ h3 {
   }
 }
 
-/* === GitHub Pages link + poster layout patch (v2) === */
-html {
-  scroll-padding-top: 5.5rem;
+/* Holographic portal refinement + routed section views */
+[hidden] {
+  display: none !important;
 }
 
-.text-link {
+.router-ready main > section:not(.is-active-route) {
+  display: none !important;
+}
+
+.is-active-route {
+  animation: routeIn 360ms ease both;
+}
+
+@keyframes routeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.992);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+body {
+  background:
+    radial-gradient(circle at 16% 14%, rgba(0, 87, 255, 0.42), transparent 18rem),
+    radial-gradient(circle at 84% 10%, rgba(255, 108, 241, 0.32), transparent 17rem),
+    radial-gradient(circle at 74% 82%, rgba(98, 245, 255, 0.2), transparent 20rem),
+    radial-gradient(circle at 18% 78%, rgba(78, 255, 151, 0.16), transparent 16rem),
+    linear-gradient(115deg, transparent 0 30%, rgba(255, 255, 255, 0.08) 31%, transparent 36% 100%),
+    linear-gradient(90deg, rgba(0, 87, 255, 0.16) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(0, 87, 255, 0.12) 1px, transparent 1px),
+    #000;
+  background-size: auto, auto, auto, auto, 260px 260px, 46px 46px, 46px 46px, auto;
+}
+
+main::before,
+main::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+}
+
+main::before {
+  left: -4rem;
+  top: 8rem;
+  width: 16rem;
+  height: 60vh;
+  border-left: 2px solid rgba(95, 255, 170, 0.42);
+  border-radius: 50%;
+  box-shadow:
+    1.4rem 2.8rem 0 -1.1rem rgba(95, 255, 170, 0.5),
+    3.4rem 8rem 0 -1rem rgba(98, 245, 255, 0.42),
+    2rem 14rem 0 -1rem rgba(95, 255, 170, 0.42);
+  transform: rotate(-11deg);
+}
+
+main::after {
+  right: -3rem;
+  bottom: 4rem;
+  width: 14rem;
+  height: 40vh;
+  border-right: 2px solid rgba(95, 255, 170, 0.36);
+  border-radius: 50%;
+  box-shadow:
+    -1.2rem 3rem 0 -1rem rgba(95, 255, 170, 0.48),
+    -3rem 7rem 0 -1rem rgba(255, 108, 241, 0.42),
+    -2rem 12rem 0 -1rem rgba(98, 245, 255, 0.4);
+  transform: rotate(9deg);
+}
+
+.nav-links a.is-current {
+  background: var(--portal-black);
+  color: #fff;
+}
+
+.nav-links .nav-cta.is-current {
+  background: linear-gradient(135deg, var(--portal-pink), var(--portal-cyan), var(--portal-yellow));
+  color: var(--portal-black);
+}
+
+.site-header,
+.nav-links .nav-cta,
+.button.primary,
+.github-panel,
+.contact-links a {
+  background-image:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.9), rgba(98, 245, 255, 0.42) 28%, rgba(255, 108, 241, 0.34) 48%, rgba(255, 244, 95, 0.42) 68%, rgba(255, 255, 255, 0.9)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(235, 241, 255, 0.9));
+  background-size: 180% 100%, auto;
+  background-position: 42% 50%, 0 0;
+}
+
+.hero {
+  overflow: visible;
+}
+
+.hero::after {
+  opacity: 0.22;
+}
+
+.hero-actions {
+  flex-wrap: wrap;
+}
+
+.section,
+.contact-section {
+  min-height: min(46rem, calc(100vh - 9rem));
+  overflow: visible;
+  padding-top: clamp(2.2rem, 5vw, 4.4rem);
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  inset: 0.9rem;
+  z-index: 0;
+  pointer-events: none;
+  border: 1px solid rgba(98, 245, 255, 0.32);
+  background:
+    linear-gradient(130deg, transparent 0 22%, rgba(255, 255, 255, 0.3) 24%, transparent 30% 100%),
+    radial-gradient(circle at 92% 14%, rgba(95, 255, 170, 0.14), transparent 9rem);
+  mix-blend-mode: multiply;
+}
+
+.section > *,
+.contact-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.section-heading {
+  gap: 0.8rem;
+  margin-bottom: clamp(1.4rem, 3vw, 2.4rem);
+}
+
+.section-heading h2,
+.section-heading h3,
+h2,
+h3 {
+  line-height: 0.96;
   overflow-wrap: anywhere;
-  word-break: normal;
 }
 
-/* Keep card decoration behind text so it cannot cross through copy. */
+.section-heading h2 {
+  display: inline-block;
+  padding-bottom: 0.1em;
+}
+
+.section-kicker {
+  max-width: 46rem;
+  color: var(--portal-ink);
+  font-family: var(--portal-font-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .photo-grid figure,
 .quick-facts div,
 .skills-grid article,
 .awards-grid article,
 .work-card,
+.project-card,
 .feature-card,
 .timeline-item,
 .leadership-list article,
-.contact-links a,
-.hero-card {
-  position: relative;
-  overflow: visible;
-}
-
-.photo-grid figure > *,
-.quick-facts div > *,
-.skills-grid article > *,
-.awards-grid article > *,
-.work-card > *,
-.feature-card > *,
-.timeline-item > *,
-.leadership-list article > *,
-.contact-links a > *,
-.hero-card > * {
-  position: relative;
-  z-index: 2;
-}
-
-.timeline-item::before,
-.work-card::before,
-.feature-card::before,
-.awards-grid article::before,
-.skills-grid article::before,
-.quick-facts div::before,
-.hero-card::before {
-  opacity: 0.18;
-  z-index: 0;
+.contact-links a {
+  background:
+    radial-gradient(circle at 92% 12%, rgba(95, 255, 170, 0.1), transparent 6rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(236, 246, 255, 0.86) 48%, rgba(255, 237, 254, 0.86)),
+    var(--portal-paper);
+  padding-top: clamp(1.2rem, 2.5vw, 1.8rem);
 }
 
 .timeline-item::after,
 .work-card::after,
 .feature-card::after,
 .awards-grid article::after,
-.skills-grid article::after,
-.quick-facts div::after,
-.hero-card::after {
-  pointer-events: none;
-  z-index: 0;
+.project-card::after {
+  display: none;
 }
 
-/* The generic feature-card layout is good for landscape images, but a research
-   poster is portrait-oriented. This makes that card full-width on desktop and
-   lets the poster keep its actual proportions instead of squeezing into a thin
-   left column. */
-.work-grid .poster-card {
-  align-items: center;
+.timeline-item h3,
+.work-card h3,
+.feature-card h3,
+.awards-grid strong,
+.project-card h3,
+.skills-grid h3 {
+  margin-top: 0;
+  line-height: 1.04;
+  text-transform: none;
+}
+
+.timeline-item:hover,
+.work-card:hover,
+.feature-card:hover,
+.project-card:hover,
+.awards-grid article:hover,
+.portal-grid a:hover {
+  box-shadow:
+    7px 7px 0 rgba(0, 87, 255, 0.72),
+    0 0 34px rgba(98, 245, 255, 0.48);
+}
+
+.portal-grid,
+.project-grid {
   display: grid;
-  gap: clamp(1.25rem, 3vw, 2.25rem);
-  grid-column: 1 / -1;
-  grid-template-columns: minmax(18rem, 0.95fr) minmax(18rem, 0.85fr);
-  min-width: 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
 }
 
-.work-grid .poster-card img {
-  aspect-ratio: auto !important;
-  background: #fff;
-  border: 2px solid var(--portal-black, #111);
-  height: auto !important;
-  max-height: min(78vh, 760px);
-  object-fit: contain !important;
-  object-position: center;
-  padding: 0.65rem;
-  width: 100%;
+.portal-grid a,
+.github-panel,
+.phd-fit,
+.project-card {
+  border: 2px solid var(--portal-black);
+  box-shadow: 7px 7px 0 rgba(0, 87, 255, 0.72);
+  color: var(--portal-ink);
 }
 
-.work-grid .poster-card div {
-  min-width: 0;
+.portal-grid a {
+  display: grid;
+  gap: 0.8rem;
+  min-height: 15rem;
+  padding: 1.2rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(232, 255, 246, 0.84) 48%, rgba(238, 232, 255, 0.9)),
+    var(--portal-paper);
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
-.work-grid .poster-card h3 {
-  max-width: 16ch;
+.portal-grid a:hover {
+  transform: translate(-2px, -2px);
+}
+
+.portal-grid span,
+.window-label,
+.project-card span {
+  color: var(--portal-blue);
+  font-family: var(--portal-font-mono);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.portal-grid strong,
+.github-panel h3,
+.phd-fit h3,
+.project-card h3 {
+  color: var(--portal-blue);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+}
+
+.project-card h3 {
+  font-size: clamp(1.45rem, 2.2vw, 1.9rem);
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.phd-fit,
+.github-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 1.4rem;
+  align-items: center;
+  margin-top: 1.4rem;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  background:
+    radial-gradient(circle at 90% 20%, rgba(95, 255, 170, 0.16), transparent 10rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(231, 245, 255, 0.92), rgba(255, 235, 254, 0.86));
+}
+
+.phd-fit ul {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.github-panel {
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin: 0 0 1.2rem;
+}
+
+.github-panel .button {
+  justify-self: end;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 18rem;
+  padding: clamp(1.2rem, 2.5vw, 1.6rem);
+}
+
+.project-card .text-link + .text-link {
+  margin-top: -0.35rem;
+}
+
+.contact-links {
+  align-items: stretch;
+}
+
+.secret-gem {
+  position: absolute;
+  z-index: 4;
+  border: 0;
+  cursor: pointer;
+}
+
+.skate-gem {
+  right: clamp(1.2rem, 5vw, 4rem);
+  bottom: 1.1rem;
+  width: 8.4rem;
+  height: 2.3rem;
+  background:
+    radial-gradient(circle at 18% 86%, #111 0 0.38rem, transparent 0.42rem),
+    radial-gradient(circle at 82% 86%, #111 0 0.38rem, transparent 0.42rem),
+    linear-gradient(135deg, var(--portal-yellow), var(--portal-cyan), var(--portal-pink));
+  border: 2px solid #fff;
+  border-radius: 999px 999px 42% 42%;
+  box-shadow: 0 0 0 2px var(--portal-black), 0 0 28px rgba(98, 245, 255, 0.7);
+  transform: rotate(-7deg);
+}
+
+.skate-gem::before {
+  content: "SKATE?";
+  color: var(--portal-black);
+  font-family: var(--portal-font-mono);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.moss-gem {
+  right: 1.4rem;
+  bottom: 1.4rem;
+  width: 3rem;
+  height: 3rem;
+  background:
+    radial-gradient(circle at 35% 35%, #d6ffe3 0 0.36rem, transparent 0.4rem),
+    radial-gradient(circle at 64% 48%, #82ffb0 0 0.46rem, transparent 0.5rem),
+    radial-gradient(circle at 42% 70%, #3df58c 0 0.42rem, transparent 0.46rem),
+    #0a3b20;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--portal-blue), 0 0 24px rgba(95, 255, 170, 0.62);
+}
+
+.secret-gem.is-unlocked {
+  animation: gemPulse 900ms ease both;
+}
+
+@keyframes gemPulse {
+  50% {
+    transform: scale(1.12) rotate(-3deg);
+    filter: brightness(1.24);
+  }
+}
+
+.secret-toast {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 80;
+  max-width: min(24rem, calc(100vw - 2rem));
+  padding: 0.9rem 1rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.88);
+  border: 2px solid var(--portal-cyan);
+  box-shadow: 6px 6px 0 rgba(255, 108, 241, 0.72);
+  font-family: var(--portal-font-mono);
+  font-size: 0.82rem;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: opacity 180ms ease, transform 180ms ease;
+  pointer-events: none;
+}
+
+.secret-toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.secret-status {
+  color: var(--portal-cyan);
 }
 
 @media (max-width: 980px) {
-  .work-grid .poster-card {
+  .portal-grid,
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .phd-fit,
+  .github-panel {
     grid-template-columns: 1fr;
   }
 
-  .work-grid .poster-card h3 {
-    max-width: none;
-  }
-
-  .work-grid .poster-card img {
-    max-height: none;
+  .github-panel .button {
+    justify-self: start;
   }
 }
 
 @media (max-width: 760px) {
-  html {
-    scroll-padding-top: 4.75rem;
+  .section,
+  .contact-section {
+    min-height: auto;
+    padding-top: 1.6rem;
+  }
+
+  .portal-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portal-grid a,
+  .project-card {
+    min-height: auto;
+  }
+
+  .skate-gem {
+    right: 0.9rem;
+    bottom: 0.8rem;
+    width: 6.8rem;
+    height: 2rem;
+  }
+
+  .moss-gem {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 1rem;
+  }
+
+  main::before,
+  main::after {
+    opacity: 0.45;
   }
 }
-
