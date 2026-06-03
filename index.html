@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Makenna 'Kenny' Rodriguez is a Howard University Honors Biology graduate, NIH NINDS Neurodegenerative Computational Fellow, researcher, data scientist, and former Division I golfer."
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta property="og:title" content="Makenna Rodriguez | e-Portfolio" />
+    <meta
+      property="og:description"
+      content="Neuroscience, computation, biotechnology, and an electric zine-style portfolio."
+    />
+    <meta property="og:type" content="website" />
+    <title>Makenna Rodriguez | e-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles:wght@300;400;500;600;700;900&family=DM+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="zine-decor" aria-hidden="true">
+      <svg class="zine-spore spore-a" viewBox="0 0 140 140">
+        <circle cx="70" cy="70" r="48" />
+        <path d="M70 22c-22 28-20 64 0 96M31 60c26-13 52-13 78 0M28 84c28 8 56 8 84 0M48 34c11 24 17 48 18 72M92 34c-11 24-17 48-18 72" />
+      </svg>
+      <svg class="zine-spore spore-b" viewBox="0 0 140 140">
+        <circle cx="70" cy="70" r="48" />
+        <path d="M31 70h78M70 22v96M40 40l60 60M100 40l-60 60M47 24c18 24 28 55 30 92" />
+      </svg>
+      <svg class="zine-mushroom" viewBox="0 0 160 160">
+        <path d="M31 70c8-35 33-53 55-49 24 4 44 24 48 55-25 8-66 6-103-6Z" />
+        <path d="M69 75c-3 25-8 42-24 61 23 8 53 7 72-2-16-16-23-35-24-60" />
+        <path d="M49 66c24 8 50 9 76 2M71 44c-5 8-12 13-22 16M99 43c3 11 10 18 22 22" />
+      </svg>
+      <svg class="zine-window" viewBox="0 0 220 120">
+        <rect x="7" y="7" width="206" height="106" rx="16" />
+        <path d="M7 34h206M32 20h7M50 20h7M68 20h7M28 62h75M28 80h130M124 62h40" />
+      </svg>
+      <svg class="zine-orbit" viewBox="0 0 180 180">
+        <circle cx="90" cy="90" r="18" />
+        <ellipse cx="90" cy="90" rx="74" ry="28" />
+        <ellipse cx="90" cy="90" rx="74" ry="28" transform="rotate(60 90 90)" />
+        <ellipse cx="90" cy="90" rx="74" ry="28" transform="rotate(120 90 90)" />
+      </svg>
+    </div>
+    <div class="butterfly-cursor" aria-hidden="true">
+      <svg viewBox="0 0 96 72" role="img">
+        <defs>
+          <linearGradient id="butterflyGradient" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#f0abfc" />
+            <stop offset="52%" stop-color="#f9a8d4" />
+            <stop offset="100%" stop-color="#7c3aed" />
+          </linearGradient>
+        </defs>
+        <path class="wing wing-left" d="M45 35C24 5 4 4 3 25c-1 18 22 24 39 18-8 14-3 28 10 22 10-5 7-21-7-30Z" />
+        <path class="wing wing-right" d="M51 35C72 5 92 4 93 25c1 18-22 24-39 18 8 14 3 28-10 22-10-5-7-21 7-30Z" />
+        <path class="butterfly-body" d="M47 27c-5 7-5 24 1 33 6-9 6-26 1-33Z" />
+        <path class="antenna" d="M47 29C38 17 31 14 24 12M50 29c9-12 16-15 23-17" />
+      </svg>
+    </div>
+
+    <header class="site-header" data-header>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Makenna Rodriguez home">
+          <span>KENNY.exe</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#home">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#research">RESEARCH</a>
+          <a href="#work">WORKS</a>
+          <a href="#awards">AWARDS</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#contact">CONTACT</a>
+          <a class="nav-cta" href="#contact">SAY HI</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" data-decor="hero">
+        <span class="glow-orb orb-one" aria-hidden="true"></span>
+        <span class="glow-orb orb-two" aria-hidden="true"></span>
+        <svg class="svg-decor hibiscus hibiscus-one" viewBox="0 0 120 120" aria-hidden="true">
+          <path d="M60 44C41 11 14 24 31 55-3 62 2 92 39 82c4 35 36 36 43 2 34 11 49-20 17-36 18-30-11-48-39-4Z" />
+          <circle cx="60" cy="62" r="11" />
+          <path d="M68 54c14-16 26-22 38-24M75 59c14-5 23-3 31 4" />
+        </svg>
+        <svg class="svg-decor palm palm-one" viewBox="0 0 160 160" aria-hidden="true">
+          <path d="M28 134C66 95 83 56 96 12" />
+          <path d="M96 12C70 21 53 37 43 62M96 12c-7 31-5 55 8 78M96 12c23 14 36 33 40 59M79 48c-24 1-42 9-57 26M90 72c-25 10-40 25-49 45M105 53c23 3 38 13 47 31" />
+        </svg>
+        <div class="hero-content">
+          <h1><span>makenna</span> <span>rodriguez</span></h1>
+          <p class="hero-lede">
+            B.S. Honors Biology · Howard University grad '25 · now a<br />
+            Neurodegenerative Computational Fellow at the NIH (NINDS).
+          </p>
+          <p class="hero-note">brain volumes / data systems / tiny portals of curiosity</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#research">SEE MY RESEARCH</a>
+            <a class="button secondary" href="#work">MY WORKS</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-label="Makenna Rodriguez in the lab">
+          <img src="assets/makenna-rodriguez.jpg" alt="Makenna Rodriguez working in a lab" />
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Portfolio highlights">
+        <div>
+          <span>NEUROSCIENCE</span>
+          <span>DATA SCIENCE</span>
+          <span>NIH FELLOW</span>
+          <span>HOWARD UNIV.</span>
+          <span>PYTHON + R</span>
+          <span>STUDENT ATHLETE</span>
+          <span>ZINE MODE</span>
+          <span>NEUROSCIENCE</span>
+          <span>DATA SCIENCE</span>
+          <span>NIH FELLOW</span>
+          <span>HOWARD UNIV.</span>
+          <span>PYTHON + R</span>
+          <span>STUDENT ATHLETE</span>
+          <span>ZINE MODE</span>
+          <span>NEUROSCIENCE</span>
+          <span>DATA SCIENCE</span>
+          <span>NIH FELLOW</span>
+          <span>HOWARD UNIV.</span>
+          <span>PYTHON + R</span>
+          <span>STUDENT ATHLETE</span>
+          <span>ZINE MODE</span>
+          <span>NEUROSCIENCE</span>
+          <span>DATA SCIENCE</span>
+          <span>NIH FELLOW</span>
+          <span>HOWARD UNIV.</span>
+          <span>PYTHON + R</span>
+          <span>STUDENT ATHLETE</span>
+          <span>ZINE MODE</span>
+        </div>
+      </section>
+
+      <section class="section photo-moments" aria-label="Makenna Rodriguez photos">
+        <div class="section-heading wide">
+          <h2>recent snapshots</h2>
+        </div>
+        <div class="photo-grid">
+          <figure>
+            <img src="assets/makenna-sfn.jpg" alt="Makenna Rodriguez at the Society for Neuroscience conference" />
+            <figcaption>Society for Neuroscience · SfN 2025</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/makenna-graduation.jpg" alt="Makenna Rodriguez in Howard University graduation regalia" />
+            <figcaption>Howard University · Class of 2025</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" data-decor="about">
+        <span class="glow-orb orb-three" aria-hidden="true"></span>
+        <svg class="svg-decor butterfly-mark butterfly-one" viewBox="0 0 96 72" aria-hidden="true">
+          <path d="M45 35C24 5 4 4 3 25c-1 18 22 24 39 18-8 14-3 28 10 22 10-5 7-21-7-30Z" />
+          <path d="M51 35C72 5 92 4 93 25c1 18-22 24-39 18 8 14 3 28-10 22-10-5-7-21 7-30Z" />
+          <path d="M47 27c-5 7-5 24 1 33 6-9 6-26 1-33Z" />
+        </svg>
+        <div class="section-heading">
+          <h2>hi, i'm kenny</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I recently graduated from Howard University with a B.S. in Honors Biology
+              (minors in Chemistry &amp; Computer Science, GPA 3.77). I'm now a Neurodegenerative
+              Computational Fellow at the National Institute of Neurological Disorders and
+              Stroke (NIH · NINDS), where I work at the intersection of neuroscience, imaging
+              and code.
+            </p>
+            <p>
+              Off the bench I'm a former Division I women's golfer, a skateboarder, and a
+              forever student of nature — happiest somewhere between a lab bench, a board, and
+              a tropical breeze.
+            </p>
+          </div>
+          <div class="quick-facts" aria-label="Quick facts">
+            <div>
+              <strong>HONORS BIOLOGY</strong>
+            </div>
+            <div>
+              <strong>CHEM + CS MINOR</strong>
+            </div>
+            <div>
+              <strong>DEAN'S LIST · ALL SEMS</strong>
+            </div>
+            <div>
+              <strong>NEC HONOR ROLL</strong>
+            </div>
+            <div>
+              <strong>D1 GOLF</strong>
+            </div>
+          </div>
+        </div>
+        <div class="leadership-block">
+          <svg class="svg-decor palm palm-two" viewBox="0 0 160 160" aria-hidden="true">
+          <path d="M28 134C66 95 83 56 96 12" />
+          <path d="M96 12C70 21 53 37 43 62M96 12c-7 31-5 55 8 78M96 12c23 14 36 33 40 59M79 48c-24 1-42 9-57 26M90 72c-25 10-40 25-49 45M105 53c23 3 38 13 47 31" />
+          </svg>
+          <div class="section-heading">
+            <h3>leadership</h3>
+          </div>
+          <div class="leadership-list">
+            <article><span>01</span><br />National Society of Black Engineers — Membership Chair</article>
+            <article><span>02</span><br />Women's Golf Team — Representative &amp; Board Member</article>
+            <article><span>03</span><br />College of Arts &amp; Sciences Honors Association</article>
+            <article><span>04</span><br />The Women's Network</article>
+            <article><span>05</span><br />Skate Club — Executive Board</article>
+            <article><span>06</span><br />NAACP</article>
+            <article><span>07</span><br />Student-Athlete Advisory Committee</article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section research-section" id="research" data-decor="research" data-sdk-section="research">
+        <span class="glow-orb orb-four" aria-hidden="true"></span>
+        <div class="section-heading wide">
+          <h2>things i've done</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item current">
+            <div class="timeline-meta">CURRENT</div>
+            <span class="current-tag">CURRENT</span>
+            <div>
+              <h3>Managing Coordinator</h3>
+              <p class="org">National Black Nonprofit Alliance (NBNA)</p>
+              <p>
+                Manage the HBCU micro-internship pipeline for SSS/NBNA via Parker Dewey —
+                coordinating applicant onboarding, IBM SkillsBuild credential tracking, and
+                intern data systems across the Upper East Coast / DMV region. Support
+                organizational operations through outreach coordination, intake template
+                development, and AI tool integration (ChatGPT, Notebook LM) in service of
+                NBNA's national social franchise and equity-building mission.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item current">
+            <div class="timeline-meta">2025 — 2027</div>
+            <span class="current-tag">CURRENT</span>
+            <div>
+              <h3>Neurodegenerative Computational Fellow</h3>
+              <p class="org">NIH — NINDS</p>
+              <p>
+                Hands-on neuroscience research: experimental design, data analysis, and
+                interpretation. Engaged in mentorship and training opportunities focused on
+                advancing careers in neuroscience research.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item current">
+            <div class="timeline-meta">CURRENT</div>
+            <span class="current-tag">CURRENT</span>
+            <div>
+              <h3>Jewish Changemakers Summer Fellow</h3>
+              <p class="org">Jewish Changemakers</p>
+              <p>
+                Selected fellow in a national leadership program engaging emerging changemakers
+                across professional development, identity, and civic action.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">FALL 2025</div>
+            <div>
+              <h3>NSF STAIR Intern</h3>
+              <p class="org">Pennsylvania State University</p>
+              <p>
+                Developed understanding of research administration — budgeting, compliance, and
+                career pathways — through mentorship, live sessions, and collaboration with
+                research administrators and faculty.
+              </p>
+              <a class="text-link" href="https://www.psu.edu/news/huck-institutes-life-sciences/story/nsf-stair-launches-inaugural-undergrad-internship-research">READ NSF STAIR FEATURE</a>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">SUMMER 2025</div>
+            <div>
+              <h3>Pre-PhD Scholars Program — Neural Engineer</h3>
+              <p class="org">University of Pittsburgh</p>
+              <p>
+                Evaluated copper, silver paint, and conductive adhesives in micro-invasive
+                neural probes to optimize conductivity, durability, and fabrication for chronic
+                recording applications.
+              </p>
+              <a class="text-link" href="assets/pre-phd-final-report-mrodriguez.pdf">READ FINAL REPORT</a>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">2022 — 2025</div>
+            <div>
+              <h3>Thesis Researcher — Molecular Dysmorphology</h3>
+              <p class="org">National Institutes of Health</p>
+              <p>
+                Developed a volumetric quantitative biomarker to measure brain volume outcome
+                for Ceroid Lipofuscinosis Neuronal Type III — Batten Disease.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">SUMMER 2024</div>
+            <div>
+              <h3>Stem Cell Biologist Intern</h3>
+              <p class="org">Thermo Fisher Scientific R&amp;D</p>
+              <p>
+                Tested cryopreservation efficiency across multiple cryodensities, integrating
+                thaw and 3D spheroid growth protocols through independent experimentation.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">SUMMER 2024</div>
+            <div>
+              <h3>SALE Program Member</h3>
+              <p class="org">Deloitte</p>
+              <p>
+                Assessed how skills as a collegiate athlete transfer to the professional
+                workplace; workshops on interviewing, personal brand, and community service.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">JANUARY 2024</div>
+            <div>
+              <h3>Quantitative Methods Workshop Representative</h3>
+              <p class="org">MIT × NSF</p>
+              <p>
+                Completed intensive, invitation-only workshop on quantitative tools and Python
+                for data analysis in biology and neuroscience, hosted by the MIT Department of
+                Biology.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">2023 — 2024</div>
+            <div>
+              <h3>Black in Cancer Mentee</h3>
+              <p class="org">Black in Cancer</p>
+              <p>
+                Paired with an experienced cancer researcher for career planning and navigating
+                post-undergraduate opportunities. Built a structured roadmap of short- and
+                long-term goals.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">SUMMER 2023</div>
+            <div>
+              <h3>Data Engineer — Bridges to Healthcare Tech</h3>
+              <p class="org">UnitedHealth Group × CMU</p>
+              <p>
+                Seminars on advanced healthcare analytics and data engineering. Presented
+                'Examining Premature Death at the County Level: The Role of Alcohol, Income,
+                and Education' to Optum leadership.
+              </p>
+              <a class="text-link" href="assets/uhg-optum-presentation.pdf">VIEW PRESENTATION</a>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">SUMMER 2022</div>
+            <div>
+              <h3>Clinical Researcher — Future Docs Abroad</h3>
+              <p class="org">Shree Hindu Mandal Hospital</p>
+              <p>
+                Shadowed clinical rotations and worked in an anatomy lab; immersed in the
+                traditions, customs, and languages of Tanzanian culture.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work" data-decor="work" data-sdk-section="works">
+        <span class="glow-orb orb-five" aria-hidden="true"></span>
+        <svg class="svg-decor hibiscus hibiscus-two" viewBox="0 0 120 120" aria-hidden="true">
+          <path d="M60 44C41 11 14 24 31 55-3 62 2 92 39 82c4 35 36 36 43 2 34 11 49-20 17-36 18-30-11-48-39-4Z" />
+          <circle cx="60" cy="62" r="11" />
+          <path d="M68 54c14-16 26-22 38-24M75 59c14-5 23-3 31 4" />
+        </svg>
+        <div class="section-heading wide">
+          <h2>thesis, posters &amp; talks</h2>
+        </div>
+        <div class="work-grid">
+          <article class="work-card">
+            <p class="work-meta">SUMMER 2023 · PRESENTATION · UHG × CMU</p>
+            <h3>Examining Premature Death at the County Level</h3>
+            <p>
+              Data-engineering capstone exploring the role of alcohol, income, and education
+              in premature death at the county level — presented to Optum leadership at the
+              Bridges to Healthcare Technology program.
+            </p>
+            <a class="text-link" href="assets/uhg-optum-presentation.pdf">VIEW PRESENTATION</a>
+          </article>
+
+          <article class="work-card">
+            <p class="work-meta">SEPT 2023 · SYMPOSIUM TALK · CLARK ATLANTA UNIVERSITY</p>
+            <h3>Ethics &amp; Bias in Data Science</h3>
+            <p>
+              Invited speaker at the Data Science Symposium addressing ethical considerations
+              and bias mitigation strategies in modern data science pipelines.
+            </p>
+          </article>
+
+          <article class="work-card">
+            <p class="work-meta">SUMMER 2024 · FINAL PRESENTATION · THERMO FISHER SCIENTIFIC R&amp;D</p>
+            <h3>Experimental Procedure and Results</h3>
+            <p>
+              Slide deck from the Thermo Fisher Scientific summer research project covering
+              experimental procedure, results, cryopreservation efficiency, thaw protocols, and
+              3D spheroid growth workflows.
+            </p>
+            <a class="text-link" href="https://docs.google.com/presentation/d/1-4tgaWld7qWAHS3G0JPgpca8DTE4NVxrllnc3VT2n80/edit?usp=sharing">VIEW SLIDES</a>
+          </article>
+
+          <article class="feature-card poster-card">
+            <img
+              src="assets/sdab-poster-thumb.jpg"
+              alt="sdAb-Based DNA Immunostaining for High-Throughput Multiplexed Imaging"
+            />
+            <div>
+              <p class="work-meta">2025 · RESEARCH POSTER · NIH NINDS</p>
+              <h3>sdAb-Based DNA Immunostaining for High-Throughput Multiplexed Imaging</h3>
+              <p>
+                First-author poster (with Mathieu Perez &amp; Michael Ward) presenting a
+                single-domain antibody + DNA branch amplification platform for multiplexed
+                fluorescence imaging — enabling high-dimensional cell state atlases and
+                quantitative analysis of cellular responses to perturbation.
+              </p>
+              <a class="text-link" href="https://y2k-butterfly-bloom.lovable.app/Final-Poster-Makenna-Rodriguez.pdf">VIEW POSTER</a>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <p class="work-meta">2022 — 2025 · HONORS THESIS · HOWARD UNIVERSITY × NIH</p>
+            <h3>Volumetric Biomarker for CLN3 — Batten Disease</h3>
+            <p>
+              Thesis developing a volumetric quantitative biomarker to measure brain volume
+              outcomes for Ceroid Lipofuscinosis Neuronal Type III (Batten Disease), in
+              collaboration with the NIH Molecular Dysmorphology lab.
+            </p>
+            <a class="text-link" href="https://docs.google.com/document/d/1pg5uw93wsdM4n3K06m3S8_pspd9uZFxU9pxSzzvclcM/edit?usp=sharing">READ THESIS</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section awards-section" id="awards" data-decor="awards" data-sdk-section="awards">
+        <span class="glow-orb orb-six" aria-hidden="true"></span>
+        <div class="section-heading">
+          <h2>some shiny things</h2>
+        </div>
+        <div class="awards-grid">
+          <article>
+            <span>SEPT 2023</span>
+            <strong>Data Science Symposium Speaker</strong>
+            <p>Clark Atlanta University</p>
+          </article>
+          <article>
+            <span>MAY 2018</span>
+            <strong>National Academy of Future Physicians &amp; Medical Scientists</strong>
+            <p>NAFPMS</p>
+          </article>
+          <article>
+            <span>MAY 2020</span>
+            <strong>African American Collegiate &amp; Youth Golfers Hall of Fame</strong>
+            <p>AACYGF</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills" data-decor="skills">
+        <svg class="svg-decor butterfly-mark butterfly-two" viewBox="0 0 96 72" aria-hidden="true">
+          <path d="M45 35C24 5 4 4 3 25c-1 18 22 24 39 18-8 14-3 28 10 22 10-5 7-21-7-30Z" />
+          <path d="M51 35C72 5 92 4 93 25c1 18-22 24-39 18 8 14 3 28-10 22-10-5-7-21 7-30Z" />
+          <path d="M47 27c-5 7-5 24 1 33 6-9 6-26 1-33Z" />
+        </svg>
+        <div class="section-heading wide">
+          <h2>my toolkit</h2>
+        </div>
+        <div class="skills-grid">
+          <article>
+            <h3>languages</h3>
+            <p><strong>Native:</strong> English</p>
+            <p><strong>Working proficiency:</strong><br />Spanish, Hebrew, American Sign Language</p>
+          </article>
+          <article>
+            <h3>code</h3>
+            <div class="pill-list">
+              <span>R</span>
+              <span>PYTHON</span>
+              <span>MATLAB</span>
+              <span>SQL</span>
+              <span>UNIX</span>
+              <span>JAVA</span>
+              <span>MICROSOFT OFFICE</span>
+              <span>GOOGLE SUITE</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" data-decor="contact">
+        <div>
+          <h2>let's connect</h2>
+          <p>
+            For research collaboration, mentorship chats, or just to say hi —
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:makenna.rodriguez1@howard.edu">
+            ✉ MAKENNA.RODRIGUEZ1@HOWARD.EDU
+          </a>
+          <a href="tel:+19546443905">
+            ☎ (954) 644-3905
+          </a>
+          <a href="https://www.linkedin.com/in/makenna-rodriguez-b02830214">
+            IN / LINKEDIN ↗
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>MADE WITH PYTHON, BLUE INK &amp; WAY TOO MANY OPEN TABS · © 2026 MAKENNA RODRIGUEZ</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
