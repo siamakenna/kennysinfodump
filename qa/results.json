@@ -1,0 +1,332 @@
+[
+  {
+    "name": "Initial seven-gem state",
+    "status": "PASS"
+  },
+  {
+    "name": "Local resources and internal destinations",
+    "status": "PASS",
+    "detail": {
+      "images": 12,
+      "targets": 30
+    }
+  },
+  {
+    "name": "Navigation and layout 1440px / home",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1440px / about",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1440px / research",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1440px / work",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1440px / projects",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1440px / awards",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1440px / skills",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1440px / contact",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1080px / home",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1080px / about",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1080px / research",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1080px / work",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1080px / projects",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1080px / awards",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1080px / skills",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 1080px / contact",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 768px / home",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 768px / about",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 768px / research",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 768px / work",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 768px / projects",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 768px / awards",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 768px / skills",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 768px / contact",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 390px / home",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 390px / about",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 390px / research",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 390px / work",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 390px / projects",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 390px / awards",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 390px / skills",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 390px / contact",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 320px / home",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 320px / about",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 320px / research",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 320px / work",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 320px / projects",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 320px / awards",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 320px / skills",
+    "status": "PASS"
+  },
+  {
+    "name": "Navigation and layout 320px / contact",
+    "status": "PASS"
+  },
+  {
+    "name": "Keyboard skip link",
+    "status": "PASS"
+  },
+  {
+    "name": "All seven gems, repeat clicks and keyboard 1440px",
+    "status": "PASS",
+    "detail": "7 / 7; repeated activation did not increment; Enter and Space both used"
+  },
+  {
+    "name": "All seven gems, repeat clicks and keyboard 390px",
+    "status": "PASS",
+    "detail": "7 / 7; repeated activation did not increment; Enter and Space both used"
+  },
+  {
+    "name": "Mobile menu Escape and focus restoration",
+    "status": "PASS"
+  },
+  {
+    "name": "Direct nested link, history and unknown route",
+    "status": "PASS"
+  },
+  {
+    "name": "Figure dialogs, images and focus return / featured",
+    "status": "FAIL",
+    "detail": "Dialog not open: assets/F05_N025_qc_montage.png\n\nfalse !== true\n"
+  },
+  {
+    "name": "Figure dialogs, images and focus return / training",
+    "status": "PASS",
+    "detail": [
+      "assets/neuromatch-certificate-2026.png"
+    ]
+  },
+  {
+    "name": "Figure dialogs, images and focus return / work",
+    "status": "PASS",
+    "detail": [
+      "assets/sdab-poster-thumb.jpg"
+    ]
+  },
+  {
+    "name": "All main images decode",
+    "status": "PASS",
+    "detail": 12
+  },
+  {
+    "name": "Reduced motion",
+    "status": "PASS"
+  },
+  {
+    "name": "Automated accessibility / home",
+    "status": "PASS",
+    "detail": {
+      "violations": 0,
+      "manualReview": [
+        "color-contrast"
+      ]
+    }
+  },
+  {
+    "name": "Automated accessibility / about",
+    "status": "PASS",
+    "detail": {
+      "violations": 0,
+      "manualReview": [
+        "aria-prohibited-attr",
+        "color-contrast"
+      ]
+    }
+  },
+  {
+    "name": "Automated accessibility / research",
+    "status": "PASS",
+    "detail": {
+      "violations": 0,
+      "manualReview": [
+        "color-contrast"
+      ]
+    }
+  },
+  {
+    "name": "Automated accessibility / work",
+    "status": "PASS",
+    "detail": {
+      "violations": 0,
+      "manualReview": [
+        "color-contrast"
+      ]
+    }
+  },
+  {
+    "name": "Automated accessibility / projects",
+    "status": "PASS",
+    "detail": {
+      "violations": 0,
+      "manualReview": [
+        "color-contrast"
+      ]
+    }
+  },
+  {
+    "name": "Automated accessibility / awards",
+    "status": "PASS",
+    "detail": {
+      "violations": 0,
+      "manualReview": [
+        "color-contrast"
+      ]
+    }
+  },
+  {
+    "name": "Automated accessibility / skills",
+    "status": "PASS",
+    "detail": {
+      "violations": 0,
+      "manualReview": [
+        "color-contrast"
+      ]
+    }
+  },
+  {
+    "name": "Automated accessibility / contact",
+    "status": "PASS",
+    "detail": {
+      "violations": 0,
+      "manualReview": [
+        "color-contrast"
+      ]
+    }
+  },
+  {
+    "name": "Runtime errors",
+    "status": "PASS",
+    "detail": {
+      "errors": [],
+      "lifecycle": {
+        "effectiveLaunch": {
+          "browserLaunched": true,
+          "engine": "chrome",
+          "launchHash": 11677035664275012000
+        },
+        "launched": false,
+        "relaunchedBrowser": false,
+        "restartedBackground": false,
+        "restoreStatus": "not_configured",
+        "reused": true,
+        "saveStatus": "not_attempted"
+      }
+    }
+  },
+  {
+    "name": "Repository policy scan",
+    "status": "PASS",
+    "detail": {
+      "filesScanned": 47
+    }
+  }
+]

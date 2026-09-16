@@ -1,0 +1,122 @@
+[
+  {
+    "url": "https://newenglandcompbio.org/",
+    "status": 200,
+    "finalUrl": "https://newenglandcompbio.org/"
+  },
+  {
+    "url": "https://www.sacnas.org/conference",
+    "status": 200,
+    "finalUrl": "https://www.sacnas.org/conference"
+  },
+  {
+    "url": "https://www.sfn.org/meetings/neuroscience-2026/general-information/",
+    "status": 200,
+    "finalUrl": "https://www.sfn.org/meetings/neuroscience-2026/general-information/"
+  },
+  {
+    "url": "https://github.com/siamakenna/perturb-LM",
+    "status": 200,
+    "finalUrl": "https://github.com/siamakenna/perturb-LM"
+  },
+  {
+    "url": "https://github.com/siamakenna/perturb-LM/blob/main/docs/METADATA_AND_PREPROCESSING_AUDIT.md",
+    "status": 200,
+    "finalUrl": "https://github.com/siamakenna/perturb-LM/blob/main/docs/METADATA_AND_PREPROCESSING_AUDIT.md"
+  },
+  {
+    "url": "https://web-pi-wheat-64.vercel.app/",
+    "status": 200,
+    "finalUrl": "https://web-pi-wheat-64.vercel.app/"
+  },
+  {
+    "url": "https://github.com/siamakenna/tmem-neuron-aligner",
+    "status": 200,
+    "finalUrl": "https://github.com/siamakenna/tmem-neuron-aligner"
+  },
+  {
+    "url": "https://github.com/siamakenna/tmem-neuron-aligner/blob/main/docs/CURATED_REVIEW_20260901.md",
+    "status": 200,
+    "finalUrl": "https://github.com/siamakenna/tmem-neuron-aligner/blob/main/docs/CURATED_REVIEW_20260901.md"
+  },
+  {
+    "url": "https://siamakenna.itch.io/soft-recall-demo",
+    "status": 200,
+    "finalUrl": "https://siamakenna.itch.io/soft-recall-demo"
+  },
+  {
+    "url": "https://siamakenna.github.io/soft-recall-demo/",
+    "status": 200,
+    "finalUrl": "https://siamakenna.github.io/soft-recall-demo/"
+  },
+  {
+    "url": "https://github.com/siamakenna/soft-recall-demo",
+    "status": 200,
+    "finalUrl": "https://github.com/siamakenna/soft-recall-demo"
+  },
+  {
+    "url": "https://github.com/siamakenna/soft-recall-demo/blob/main/docs/release/RELEASE_NOTES_0.3.0.md",
+    "status": 200,
+    "finalUrl": "https://github.com/siamakenna/soft-recall-demo/blob/main/docs/release/RELEASE_NOTES_0.3.0.md"
+  },
+  {
+    "url": "https://stair.psu.edu/get-involved/virtual-student-training/",
+    "status": 200,
+    "finalUrl": "https://stair.psu.edu/get-involved/virtual-student-training/"
+  },
+  {
+    "url": "https://github.com/siamakenna/neuromatch_personal",
+    "status": 200,
+    "finalUrl": "https://github.com/siamakenna/neuromatch_personal"
+  },
+  {
+    "url": "https://portal.neuromatchacademy.org/certificate/4d4ae313-941c-4609-bd6b-7379af82d16b",
+    "status": 200,
+    "finalUrl": "https://portal.neuromatchacademy.org/certificate/4d4ae313-941c-4609-bd6b-7379af82d16b"
+  },
+  {
+    "url": "https://www.training.nih.gov/documents/129/PPD-Program_Book_2026_v6.pdf#page=79",
+    "status": 403,
+    "finalUrl": "https://www.training.nih.gov/documents/129/PPD-Program_Book_2026_v6.pdf#page=79"
+  },
+  {
+    "url": "https://docs.google.com/presentation/d/1-4tgaWld7qWAHS3G0JPgpca8DTE4NVxrllnc3VT2n80/edit?usp=sharing",
+    "status": 200,
+    "finalUrl": "https://docs.google.com/presentation/d/1-4tgaWld7qWAHS3G0JPgpca8DTE4NVxrllnc3VT2n80/edit?usp=sharing"
+  },
+  {
+    "url": "https://docs.google.com/document/d/1pg5uw93wsdM4n3K06m3S8_pspd9uZFxU9pxSzzvclcM/edit?usp=sharing",
+    "status": 200,
+    "finalUrl": "https://docs.google.com/document/d/1pg5uw93wsdM4n3K06m3S8_pspd9uZFxU9pxSzzvclcM/edit?usp=sharing"
+  },
+  {
+    "url": "https://github.com/siamakenna",
+    "status": 200,
+    "finalUrl": "https://github.com/siamakenna"
+  },
+  {
+    "url": "https://github.com/siamakenna/kennysinfodump",
+    "status": 200,
+    "finalUrl": "https://github.com/siamakenna/kennysinfodump"
+  },
+  {
+    "url": "https://github.com/siamakenna/commonaxon",
+    "status": 200,
+    "finalUrl": "https://github.com/siamakenna/commonaxon"
+  },
+  {
+    "url": "https://siamakenna.github.io/commonaxon/",
+    "status": 200,
+    "finalUrl": "https://siamakenna.github.io/commonaxon/"
+  },
+  {
+    "url": "https://github.com/siamakenna/gardenbyte",
+    "status": 200,
+    "finalUrl": "https://github.com/siamakenna/gardenbyte"
+  },
+  {
+    "url": "https://www.linkedin.com/in/makenna-rodriguez-b02830214",
+    "status": 999,
+    "finalUrl": "https://www.linkedin.com/in/makenna-rodriguez-b02830214"
+  }
+]
