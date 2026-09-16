@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Makenna 'Kenny' Rodriguez is a Howard University Honors Biology graduate, NIH NINDS Neurodegenerative Computational Fellow, researcher, data scientist, and former Division I golfer."
+      content="Makenna Rodriguez works across neurodegeneration, microscopy, computational analysis, and reproducible research. Explore current projects, public figures, and Fall 2026 presentations."
     />
     <meta name="theme-color" content="#000000" />
     <meta property="og:title" content="Makenna Rodriguez | e-Portfolio" />
     <meta
       property="og:description"
-      content="Neuroscience, computation, biotechnology, and an electric zine-style portfolio."
+      content="Neurodegeneration, quantitative imaging, research software, and the work behind the results. September 2026 research portfolio."
     />
     <meta property="og:type" content="website" />
     <title>Makenna Rodriguez | e-Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles:wght@300;400;500;600;700;900&family=DM+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="refresh.css" />
   </head>
-  <body>
+  <body class="september-refresh">
+    <a class="skip-link" href="#main">Skip to content</a>
     <div class="zine-decor" aria-hidden="true">
       <svg class="zine-spore spore-a" viewBox="0 0 140 140">
         <circle cx="70" cy="70" r="48" />
@@ -72,16 +74,17 @@
         </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
           <span class="sr-only">Toggle navigation</span>
-          <span></span>
-          <span></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </button>
         <div class="nav-links" id="nav-links">
           <a href="#home">HOME</a>
           <a href="#about">ABOUT</a>
           <a href="#research">RESEARCH</a>
-          <a href="#work">WORKS</a>
+          <a href="#work">OUTPUTS</a>
           <a href="#projects">PROJECTS</a>
-          <a href="#awards">AWARDS</a>
+          <a href="#awards">MILESTONES</a>
           <a href="#skills">SKILLS</a>
           <a href="#contact">CONTACT</a>
           <a class="nav-cta" href="#contact">SAY HI</a>
@@ -89,7 +92,8 @@
       </nav>
     </header>
 
-    <main id="main">
+    <main id="main" tabindex="-1">
+      <h1 class="sr-only" id="route-title" hidden></h1>
       <section class="hero" id="home" data-decor="hero">
         <span class="glow-orb orb-one" aria-hidden="true"></span>
         <span class="glow-orb orb-two" aria-hidden="true"></span>
@@ -105,20 +109,103 @@
         <div class="hero-content">
           <h1><span>makenna</span> <span>rodriguez</span></h1>
           <p class="hero-lede">
-            B.S. Honors Biology · Howard University grad '25 · now a<br />
-            Neurodegenerative Computational Fellow at the NIH (NINDS).
+            Neurodegenerative Computational Fellow · NIH/NINDS<br />
+            <span class="hero-degree">Howard University Honors Biology '25</span>
           </p>
-          <p class="hero-note">brain volumes / data systems / tiny portals of curiosity</p>
+          <p class="hero-research">I work across neurodegeneration, microscopy, computation, and translational biology, especially where careful measurement and reproducible analysis can make complex biological data more useful.</p>
+          <p class="hero-note">research in progress · september 2026</p>
           <div class="hero-actions">
-            <a class="button primary" href="#research">SEE MY RESEARCH</a>
-            <a class="button secondary" href="#work">MY WORKS</a>
-            <a class="button secondary" href="#projects">CODE PROJECTS</a>
+            <a class="button primary" href="#featured">CURRENT RESEARCH</a>
+            <a class="button secondary" href="#trail">FALL 2026</a>
+            <a class="button secondary" href="#work">POSTERS + TALKS</a>
           </div>
         </div>
-        <div class="hero-media" aria-label="Makenna Rodriguez in the lab">
-          <img src="assets/makenna-rodriguez.jpg" alt="Makenna Rodriguez working in a lab" />
+        <div class="hero-media">
+          <img width="1021" height="1362" src="assets/makenna-rodriguez.jpg" alt="Makenna Rodriguez working in a lab" />
         </div>
         <button class="secret-gem skate-gem" type="button" data-secret="Unlocked: skate brain mode — science is also balance, iteration, and landing the next try." aria-label="Unlock hidden skate note"></button>
+      </section>
+
+      <section class="section current-arc refresh-section" id="now" aria-labelledby="now-title">
+        <div class="section-heading wide"><p class="eyebrow">STATUS / SEPTEMBER 2026</p><h2 id="now-title">the current thread</h2></div>
+        <ol class="arc-track">
+          <li><span class="node-label">01 / NOW</span><h3>Neurodegenerative Computational Fellow</h3><p>NIH · NINDS</p></li>
+          <li><span class="node-label">02 / BUILDING</span><h3><a href="#perturb-lm">Perturb-LM</a></h3><p>+ <a href="#tmem106b">longitudinal TMEM106B imaging / phenotyping</a></p></li>
+          <li><span class="node-label">03 / PRESENTING</span><h3>NECB → SACNAS → SfN</h3><p>Fall 2026 · <a href="#trail">follow the route</a></p></li>
+          <li><span class="node-label">04 / NEXT</span><h3>PhD applications</h3><p>Fall 2027 entry</p></li>
+        </ol>
+      </section>
+
+      <section class="section refresh-section" id="trail" aria-labelledby="trail-title">
+        <div class="section-heading wide"><p class="eyebrow">2026 RESEARCH TRAIL</p><h2 id="trail-title">where I'll be</h2><p class="section-kicker">Work leaving the notebook and entering the conversation.</p></div>
+        <ol class="conference-route">
+          <li class="conference-ticket"><p class="ticket-date">OCT 01–02 <span>CAMBRIDGE, MA</span></p><h3>NECB 2026</h3><p class="ticket-status">ATTENDING · PRESENTING</p><p><strong>Perturb-LM</strong><br />Late-breaking poster · A204</p><p class="ticket-detail">Leakage-Aware Language Retrieval of Cell Painting Morphology</p><a class="text-link" href="https://newenglandcompbio.org/">OFFICIAL PROGRAM ↗</a></li>
+          <li class="conference-ticket"><p class="ticket-date">OCT 29–31 <span>LONG BEACH, CA</span></p><h3>SACNAS 2026</h3><p class="ticket-status">ATTENDING · PRESENTING</p><p>Research presentation accepted</p><a class="text-link" href="https://www.sacnas.org/conference">CONFERENCE WEBSITE ↗</a></li>
+          <li class="conference-ticket"><p class="ticket-date">NOV 14–18 <span>WASHINGTON, DC</span></p><h3>Society for Neuroscience 2026</h3><p class="ticket-status">ATTENDING · PRESENTING</p><p>Research abstract accepted</p><a class="text-link" href="https://www.sfn.org/meetings/neuroscience-2026/general-information/">CONFERENCE WEBSITE ↗</a></li>
+        </ol>
+        <aside class="accepted-note"><span class="eyebrow">ALSO ACCEPTED / NOT ON THE TRAVEL ROUTE</span><p><strong>Central US Synthetic Biology Workshop · Rice University</strong><br />Perturb-LM abstract accepted · unable to attend · not presenting.</p></aside>
+      </section>
+
+      <section class="section refresh-section featured-research" id="featured" aria-labelledby="featured-title">
+        <div class="section-heading wide"><p class="eyebrow">FEATURED CURRENT RESEARCH</p><h2 id="featured-title">questions → workflows → evidence</h2></div>
+        <article class="research-story" id="perturb-lm">
+          <div class="story-titlebar"><span>01 / PERTURB-LM</span><span>BENCHMARK DEVELOPMENT · ONGOING</span></div>
+          <div class="story-body">
+            <header class="story-heading"><p class="eyebrow">FROM PASSION PROJECT → RESEARCH BENCHMARK</p><h3>Perturb-LM</h3><p class="story-subtitle">Can biological language help us search cellular morphology?</p></header>
+            <div class="story-intro"><p>Perturb-LM started with a question I couldn't stop thinking about: could biological language help us search cellular morphology? What began as a small passion project became a harder research question: not simply whether retrieval could work, but whether it worked for the right reasons.</p><p>I'm building a leakage-aware benchmark for natural-language retrieval of Cell Painting morphology. The work now includes explicit information boundaries, held-out evaluation, comparator models, uncertainty analysis, reproducibility documentation, a collaborator workflow, public research artifacts, and conference acceptances.</p></div>
+            <details class="research-details" open><summary>Project evolution / six steps</summary><ol class="project-evolution">
+              <li><span>01 · QUESTION</span><p>Can biological language retrieve meaningful cellular morphology?</p></li>
+              <li><span>02 · EARLY PROTOTYPE</span><p>Text-to-morphology retrieval experiments.</p></li>
+              <li><span>03 · HARDEN THE QUESTION</span><p>Identifier stripping, leakage controls, plate/well exclusions, held-out evaluation, and evaluability accounting.</p></li>
+              <li><span>04 · COMPARATOR SUITE</span><p>TF-IDF, BiomedBERT, MedCPT, BioLORD, and CellCLIP.</p></li>
+              <li><span>05 · REPRODUCIBILITY</span><p>Frozen benchmark definitions, metadata-role auditing, bootstrap uncertainty, versioned artifacts, and public-safe outputs.</p></li>
+              <li><span>06 · OUTSIDE THE REPO</span><p>NECB 2026, Central US SynBio acceptance, collaborator workflow, and ongoing manuscript / benchmark development.</p></li>
+            </ol></details>
+            <h4 class="artifact-heading">From biological query to retrieval test</h4>
+            <figure class="research-figure"><a href="assets/perturb-figure-b-workflow.png" data-figure aria-label="Enlarge Perturb-LM Figure B, workflow"><img src="assets/perturb-figure-b-workflow.png" width="1499" height="1049" loading="lazy" alt="Perturb-LM workflow, Figure B. Four numbered steps are transcribed immediately below for accessible reading." /></a><figcaption>Figure B · supplied workflow artifact, August 2026. The numbered sequence below preserves the reading order at every screen size. The 4,524 QC profiles shown here describe an upstream pool, not the final strict query population.</figcaption></figure>
+            <ol class="workflow-steps" aria-label="Perturb-LM workflow in reading order"><li><strong>1. Biological query</strong>Descriptive metadata only; direct identifiers and acquisition fields excluded.</li><li><strong>2. Text representation</strong>Identifier-stripped TF-IDF or frozen BiomedBERT embeddings.</li><li><strong>3. Train-only alignment</strong>A ridge projection learned on training data maps BiomedBERT to morphology space.</li><li><strong>4. Retrieval evaluation</strong>Held-out plate / treatment tests with leakage-aware exclusions. The workflow snapshot uses 904 morphology features.</li></ol>
+            <h4 class="artifact-heading">Figure A / the baseline question</h4>
+            <figure class="research-figure"><a href="assets/perturb-figure-a-results.png" data-figure aria-label="Enlarge repaired Perturb-LM Figure A, four-condition analysis"><img src="assets/perturb-figure-a-results.png" width="2865" height="1677" loading="lazy" alt="Figure A. Identifier-stripped TF-IDF has higher mAP than the tested frozen and projected BiomedBERT representations in four specified conditions. Exact displayed values are in the following accessible table." /></a><figcaption>Figure A · supplied August 2026 analysis, restored from its uncropped source export without changing the plotted values. Within these specified conditions, the identifier-stripped lexical baseline outperformed the tested frozen / projected BiomedBERT representations. This does not establish biological superiority or a universal model ranking.</figcaption></figure>
+            <details class="research-details"><summary>Figure A values / four specified conditions</summary><div class="table-scroll" role="region" aria-label="Figure A data table" tabindex="0"><table><caption>mAP values transcribed from the supplied August figure, rounded as displayed</caption><thead><tr><th scope="col">Held-out split / exclusion setting</th><th scope="col">TF-IDF</th><th scope="col">Frozen BiomedBERT</th><th scope="col">Projected BiomedBERT</th></tr></thead><tbody><tr><th scope="row">Plate / strict</th><td>0.157</td><td>0.009</td><td>0.033</td></tr><tr><th scope="row">Plate / none</th><td>0.243</td><td>0.013</td><td>0.063</td></tr><tr><th scope="row">Treatment / none</th><td>0.721</td><td>0.040</td><td>0.081</td></tr><tr><th scope="row">Treatment / strict</th><td>0.788</td><td>0.034</td><td>0.111</td></tr></tbody></table></div><p class="small-note">The figure annotates the primary projected-minus-TF-IDF difference as -0.1243, with a paired 95% CI of [-0.1519, -0.0946], also recorded in the repository's earlier abstract reconciliation. This is not the September comparator confidence-interval table.</p></details>
+            <p class="evidence-boundary"><strong>Artifact status:</strong> this earlier four-condition figure was supplied by the author. Its secondary-condition values have not been independently reconciled to the current versioned benchmark outputs. It is retained as a dated research artifact, not promoted as the current comparator suite. The current public strict comparison follows.</p>
+            <h4 class="artifact-heading">September update / expanded comparator suite</h4>
+            <div class="analysis-layout">
+              <figure class="research-figure"><a href="assets/strict_comparator_map_2026-09-12.svg" data-figure aria-label="Enlarge the strict comparator results"><img src="assets/strict_comparator_map_2026-09-12.svg" alt="Strict held-out-plate mAP comparison. Identifier-stripped TF-IDF 0.157407; MedCPT projection 0.047166; BioLORD projection 0.039978; projected BiomedBERT 0.033156; CellCLIP WELL_MEAN 0.007622 and WELL_ATTENTION 0.007000. Full data below." width="1100" height="582" loading="lazy" /></a><figcaption>Strict held-out-plate comparison. Higher <abbr title="Mean average precision">mAP</abbr> is better. The identifier-stripped lexical control remains difficult to beat, emphasizing why strong baselines matter. <span>Public repository figure · September 12, 2026 · select to enlarge</span></figcaption></figure>
+              <aside class="evaluability"><p class="eyebrow">EVALUABILITY</p><h4>Strict held-out-plate condition</h4><dl><div><dt>Total queries</dt><dd>1,079</dd></div><div><dt>Evaluable after strict exclusions</dt><dd>180</dd></div></dl><p>The remaining 899 queries are nonevaluable under the filtering / candidate-availability rules. They are not 899 model failures.</p></aside>
+            </div>
+            <details class="research-details"><summary>Inspect the values and evaluation boundaries</summary><div class="table-scroll" role="region" aria-label="Strict comparator values" tabindex="0"><table><caption>Primary strict M0 comparison · public aggregate data, September 12, 2026</caption><thead><tr><th scope="col">Method</th><th scope="col">mAP</th></tr></thead><tbody>
+              <tr><th scope="row">Identifier-stripped TF-IDF</th><td>0.157407</td></tr><tr><th scope="row">MedCPT · train-only projection</th><td>0.047166</td></tr><tr><th scope="row">BioLORD-2023 · train-only projection</th><td>0.039978</td></tr><tr><th scope="row">Projected BiomedBERT</th><td>0.033156</td></tr><tr><th scope="row">CellCLIP M0 · WELL_MEAN</th><td>0.007622</td></tr><tr><th scope="row">CellCLIP M0 · WELL_ATTENTION</th><td>0.007000</td></tr>
+            </tbody></table></div><p><a class="text-link" href="assets/strict_comparator_primary_2026-09-12.csv">INSPECT PUBLIC DATA / CSV ↗</a></p><p>Same-plate and same-well candidates are excluded. This population is different from the earlier 641-query lexical benchmark. The downloadable CSV also includes three unaligned controls; this figure and table highlight six comparators.</p></details>
+            <p class="evidence-boundary"><strong>Current boundary:</strong> the repository reports these strict results but still flags verification of the exact saved M0 query artifact as pending. These are condition-specific comparisons, not a definitive model ranking or evidence that language models understand morphology. Held-out-batch generalization remains unavailable.</p>
+            <p class="scientific-takeaway">A more complicated model is not automatically a better benchmark result.</p>
+            <p class="notebook-note">// baseline choice is part of the science.</p>
+            <div class="artifact-links"><a class="button primary" href="https://github.com/siamakenna/perturb-LM">VIEW REPOSITORY ↗</a><a class="text-link" href="https://github.com/siamakenna/perturb-LM/blob/main/docs/METADATA_AND_PREPROCESSING_AUDIT.md">VIEW METHODS ↗</a><a class="text-link" href="https://web-pi-wheat-64.vercel.app">VIEW PUBLIC PROTOTYPE ↗</a></div>
+            <p class="small-note">The public prototype is a synthetic interface demo and aggregate dashboard, not a live biomedical retrieval model.</p>
+          </div>
+        </article>
+
+        <article class="research-story" id="tmem106b">
+          <div class="story-titlebar"><span>02 / TMEM106B NEURON ALIGNER</span><span>CURATED REVIEW · METHOD VALIDATION</span></div>
+          <div class="story-body">
+            <header class="story-heading"><p class="eyebrow">MICROSCOPY → QUANTITATIVE PHENOTYPING</p><h3>TMEM106B Neuron Aligner</h3><p class="story-subtitle">Longitudinal single-neuron tracking + phenotype analysis</p></header>
+            <p>I build and audit the workflow that follows neuron identity across imaging visits, then measures the 561 / mCherry phenotype within a fixed region. Neuron identity is established from 488 morphology rather than the phenotype signal being measured, keeping tracking and phenotype interpretation conceptually separate.</p>
+            <ol class="channel-flow"><li><span>488 MORPHOLOGY</span><strong>Neuron identity + longitudinal tracking</strong></li><li><span>FIXED PHENOTYPE ROI</span><strong>561 / mCherry phenotype</strong></li><li><span>MANUAL SINGLE-NEURON QC</span><strong>Review before interpretation</strong></li></ol>
+            <dl class="study-facts"><div><dt>Longitudinal visits</dt><dd>9</dd></div><div><dt>Days followed</dt><dd>8–39</dd></div><div><dt>Wells / matched pairs</dt><dd>6 / 3</dd></div><div><dt>Neuron-centered crops</dt><dd>128 × 128</dd></div></dl>
+            <p class="small-note">Tight longitudinal 488 identity core · fixed phenotype ROI · manual single-neuron QC. The three matched well pairs, not the individual neurons, define the biological replicate structure.</p>
+            <div class="montage-comparison">
+              <figure class="research-figure"><p class="specimen-label">CLEAN LONGITUDINAL TRACK / J05_N015</p><a href="assets/J05_N015_audit_montage.png" data-figure aria-label="Enlarge clean longitudinal track J05_N015"><img width="1464" height="1854" src="assets/J05_N015_audit_montage.png" alt="J05_N015 public longitudinal montage with 488 identity, raw mCherry, puncta, and diffuse residual views across nine visits." loading="lazy" /></a><figcaption>A representative curated track with a tight 488-derived identity core and a fixed phenotype ROI. Identity and phenotype channels remain independently visible.</figcaption></figure>
+              <figure class="research-figure"><p class="specimen-label">QC EXCLUSION / F05_N025</p><a href="assets/F05_N025_qc_montage.png" data-figure aria-label="Enlarge QC exclusion F05_N025"><img width="1464" height="1854" src="assets/F05_N025_qc_montage.png" alt="F05_N025 public QC montage showing a spatially centered crop containing more than one neuron within the phenotype ROI." loading="lazy" /></a><figcaption>This crop stays centered but contains more than one neuron within the phenotype ROI. Successful registration does not automatically establish a biologically valid single-neuron track.</figcaption></figure>
+            </div>
+            <p class="evidence-boundary"><strong>In review:</strong> candidate tracks require curated acceptance before phenotype interpretation. These examples do not establish tracking accuracy, a TMEM106B effect, or lysosomal rupture.</p>
+            <p class="notebook-note">// a centered neuron is not necessarily a valid neuron.</p>
+            <div class="artifact-links"><a class="button primary" href="https://github.com/siamakenna/tmem-neuron-aligner">VIEW REPOSITORY ↗</a><a class="text-link" href="https://github.com/siamakenna/tmem-neuron-aligner/blob/main/docs/CURATED_REVIEW_20260901.md">VIEW CURATED REVIEW ↗</a></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section refresh-section" id="soft-recall" aria-labelledby="soft-title">
+        <div class="section-heading wide"><p class="eyebrow">PUBLISHED / INTERACTIVE WORK</p><h2 id="soft-title">a different way into the science</h2></div>
+        <article class="soft-feature"><img width="1280" height="720" src="assets/soft-recall-banner.webp" alt="Soft Recall title screen, a painted interior from the first-person narrative game" loading="lazy" /><div class="soft-copy"><p class="eyebrow">PUBLISHED INTERACTIVE PROJECT · v0.3.0</p><h3>Soft Recall</h3><p>A first-person point-and-click visual novel about memory, routine, uncertainty, and care. Research-informed storytelling, built to be played.</p><ul class="release-highlights"><li>Three endings + saved progress</li><li>Keyboard interaction alternatives</li><li>Reduced-motion support</li><li>Silent, pausable camera films</li><li>Optional room stories</li><li>Documented cross-browser QA</li></ul><div class="artifact-links"><a class="button primary" href="https://siamakenna.itch.io/soft-recall-demo">PLAY ON ITCH.IO ↗</a><a class="button secondary" href="https://siamakenna.github.io/soft-recall-demo/">PLAY WEB BUILD ↗</a><a class="text-link" href="https://github.com/siamakenna/soft-recall-demo">VIEW SOURCE ↗</a><a class="text-link" href="https://github.com/siamakenna/soft-recall-demo/blob/main/docs/release/RELEASE_NOTES_0.3.0.md">RELEASE DOCUMENTATION ↗</a></div><p class="small-note">Desktop-first game: use a browser window of at least 900 × 600. Progress is saved in the current browser.</p><p class="small-note">A fictional narrative experience, not medical advice, diagnosis, screening, treatment, or clinical assessment.</p></div></article>
       </section>
 
       <section class="ticker" aria-label="Portfolio highlights">
@@ -160,13 +247,14 @@
         </div>
         <div class="photo-grid">
           <figure>
-            <img src="assets/makenna-sfn.jpg" alt="Makenna Rodriguez at the Society for Neuroscience conference" />
+            <img width="4284" height="5712" loading="lazy" src="assets/makenna-sfn.jpg" alt="Makenna Rodriguez at the Society for Neuroscience conference" />
             <figcaption>Society for Neuroscience · SfN 2025</figcaption>
           </figure>
           <figure>
-            <img src="assets/makenna-graduation.jpg" alt="Makenna Rodriguez in Howard University graduation regalia" />
+            <img width="4480" height="6720" loading="lazy" src="assets/makenna-graduation.jpg" alt="Makenna Rodriguez in Howard University graduation regalia" />
             <figcaption>Howard University · Class of 2025</figcaption>
           </figure>
+          <figure class="talk-photo"><img src="assets/makenna-research-talk.jpg" alt="Makenna Rodriguez presenting research at a lectern, with a lab acknowledgments slide projected beside her" width="1920" height="1440" loading="lazy" /><figcaption>Sharing the work, and acknowledging the people behind it.</figcaption></figure>
         </div>
       </section>
 
@@ -212,11 +300,10 @@
         <div class="about-grid">
           <div class="about-copy">
             <p>
-              I recently graduated from Howard University with a B.S. in Honors Biology
-              (minors in Chemistry &amp; Computer Science, GPA 3.77). I'm now a Neurodegenerative
-              Computational Fellow at the National Institute of Neurological Disorders and
-              Stroke (NIH · NINDS), where I work at the intersection of neuroscience, imaging
-              and code.
+              I'm a researcher working between biological experiments, microscopy,
+              computational analysis, and reproducible workflows. My B.S. in Honors Biology
+              from Howard University (2025), with Chemistry and Computer Science minors,
+              gave me a foundation for moving between these kinds of questions.
             </p>
             <p>
               Off the bench I'm a former Division I women's golfer, a skateboarder, and a
@@ -277,43 +364,30 @@
       <section class="section research-section" id="research" data-decor="research" data-sdk-section="research">
         <span class="glow-orb orb-four" aria-hidden="true"></span>
         <div class="section-heading wide">
-          <h2>things i've done</h2>
+          <p class="eyebrow">RESEARCH EXPERIENCE</p>
+          <h2>from the bench to the analysis</h2>
         </div>
         <div class="timeline">
-          <article class="timeline-item current">
-            <div class="timeline-meta">CURRENT</div>
-            <span class="current-tag">CURRENT</span>
-            <div>
-              <h3>Managing Coordinator</h3>
-              <p class="org">National Black Nonprofit Alliance (NBNA)</p>
-              <p>
-                Manage the HBCU micro-internship pipeline for SSS/NBNA via Parker Dewey —
-                coordinating applicant onboarding, IBM SkillsBuild credential tracking, and
-                intern data systems across the Upper East Coast / DMV region. Support
-                organizational operations through outreach coordination, intake template
-                development, and AI tool integration (ChatGPT, Notebook LM) in service of
-                NBNA's national social franchise and equity-building mission.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-item current">
+          <article class="timeline-item current ninds-role">
             <div class="timeline-meta">2025 — 2027</div>
             <span class="current-tag">CURRENT</span>
             <div>
               <h3>Neurodegenerative Computational Fellow</h3>
               <p class="org">NIH — NINDS</p>
               <p>
-                Hands-on neuroscience research: experimental design, data analysis, and
-                interpretation. Engaged in mentorship and training opportunities focused on
-                advancing careers in neuroscience research.
+                Work across neurodegeneration, microscopy, and quantitative image analysis.
+                Build and audit longitudinal TMEM106B imaging workflows, separate neuron
+                tracking from computational phenotyping, and review image quality before
+                interpreting measurements. Experimental troubleshooting, reproducible
+                analysis records, scientific communication, and mentoring are part of the work.
+                Current projects remain in development and curated review.
               </p>
+              <a class="text-link" href="#tmem106b">EXPLORE THE CURRENT WORKFLOW →</a>
             </div>
           </article>
 
-          <article class="timeline-item current">
-            <div class="timeline-meta">CURRENT</div>
-            <span class="current-tag">CURRENT</span>
+          <article class="timeline-item">
+            <div class="timeline-meta">FELLOWSHIP</div>
             <div>
               <h3>Jewish Changemakers Summer Fellow</h3>
               <p class="org">Jewish Changemakers</p>
@@ -334,7 +408,7 @@
                 career pathways — through mentorship, live sessions, and collaboration with
                 research administrators and faculty.
               </p>
-              <a class="text-link" href="https://www.psu.edu/news/huck-institutes-life-sciences/story/nsf-stair-launches-inaugural-undergrad-internship-research">READ NSF STAIR FEATURE</a>
+              <a class="text-link" href="https://stair.psu.edu/get-involved/virtual-student-training/">PENN STATE PROFILE ↗</a>
             </div>
           </article>
 
@@ -443,6 +517,21 @@
         <button class="secret-gem probe-gem" type="button" data-secret="Unlocked: probe note — reliable neural data starts with patient fabrication, materials choices, and clean signal paths." aria-label="Unlock hidden neural probe note"></button>
       </section>
 
+      <section class="section refresh-section" id="training" aria-labelledby="training-title">
+        <div class="section-heading wide"><p class="eyebrow">CONTINUED TRAINING</p><h2 id="training-title">another lens on the brain</h2></div>
+        <article class="training-record credential-layout"><div><span class="credential-label">COMPLETED · JULY 24, 2026 · 128 HOURS</span><h3>Neuromatch Computational Neuroscience</h3><p>Completed the interactive track and course project.</p><h4>Learning Transforms Object Representations Across the Visual Cortex</h4><p>Analyzed activity from more than 55,000 neurons to investigate how unsupervised learning reorganizes leaf/circle object representations across mouse visual areas.</p><p class="small-note">Project scope supplied by the author; no model-performance or brain-area result is claimed here. Computational neuroscience · neural population analysis · unsupervised learning · representation analysis.</p><div class="artifact-links"><a class="text-link" href="https://github.com/siamakenna/neuromatch_personal">PERSONAL COURSE WORKSPACE ↗</a><a class="text-link" href="https://portal.neuromatchacademy.org/certificate/4d4ae313-941c-4609-bd6b-7379af82d16b">VERIFY CREDENTIAL ↗</a><a class="text-link" href="assets/neuromatch-certificate-2026.pdf">CERTIFICATE / PDF ↗</a></div></div><figure class="research-figure"><a href="assets/neuromatch-certificate-2026.png" data-figure aria-label="Enlarge Makenna Rodriguez's Neuromatch completion certificate"><img src="assets/neuromatch-certificate-2026.png" alt="Neuromatch Academy certificate awarded to Makenna Rodriguez on July 24, 2026 for the Computational Neuroscience interactive track and course project, 128 hours." width="1700" height="2200" loading="lazy" /></a><figcaption>Original completion certificate.</figcaption></figure></article>
+      </section>
+
+      <section class="section refresh-section" id="mentorship" aria-labelledby="mentorship-title">
+        <div class="section-heading wide"><p class="eyebrow">MENTORSHIP + PROJECT OPERATIONS</p><h2 id="mentorship-title">the work around the work</h2></div>
+        <div class="contribution-grid"><article><h3>Computer Science Mentor</h3><p class="org">Science Mentorship Institute</p><p>Technical mentorship and computational thinking: helping early-stage researchers and students make technical concepts approachable.</p></article><article><h3>NIH research mentoring</h3><p>Mentored a Columbia undergraduate through a TMEM106B amyloid-fibril / BindCraft protein-design project, connecting the biological question with the computational workflow.</p></article><article><h3>Projects Coordinator</h3><p class="org">National Black Nonprofit Alliance</p><p>Coordinate HBCU micro-internship programming, applicant onboarding, credential tracking, and partner workflows. Integrate digital / AI tools and intern data systems into day-to-day operations.</p></article></div>
+      </section>
+
+      <section class="section refresh-section" id="how-i-work" aria-labelledby="how-title">
+        <div class="section-heading wide"><p class="eyebrow">HOW I WORK</p><h2 id="how-title">notes to carry into the lab</h2></div>
+        <div class="principles"><article><span>01</span><h3>Measure carefully</h3><p>Biology gets messy quickly. QC, metadata, acquisition context, and experimental details are part of the result.</p></article><article><span>02</span><h3>Make the pipeline auditable</h3><p>Keep assumptions, exclusions, uncertainty, and preprocessing visible enough that another researcher can reproduce or challenge the conclusion.</p></article><article><span>03</span><h3>Leave the project easier</h3><p>Write the documentation. Organize the handoff. Mentor the next person. Leave behind a workflow another researcher can actually use.</p></article></div>
+      </section>
+
       <section class="section work-section" id="work" data-decor="work" data-sdk-section="works">
         <span class="glow-orb orb-five" aria-hidden="true"></span>
         <svg class="svg-decor hibiscus hibiscus-two" viewBox="0 0 120 120" aria-hidden="true">
@@ -454,6 +543,7 @@
           <h2>thesis, posters &amp; talks</h2>
         </div>
         <div class="work-grid">
+          <article class="work-card recent-output"><p class="work-meta">APRIL 30, 2026 · NIH POSTBAC POSTER DAY · 5-120</p><h3>Immunostaining Coupled Branch Amplification</h3><p>Listed in the NIH 2026 program book under Makenna Rodriguez, with preceptor Dr. Michael Ward.</p><a class="text-link" href="https://www.training.nih.gov/documents/129/PPD-Program_Book_2026_v6.pdf#page=79">NIH PROGRAM BOOK ↗</a></article>
           <article class="work-card">
             <p class="work-meta">SUMMER 2023 · PRESENTATION · UHG × CMU</p>
             <h3>Examining Premature Death at the County Level</h3>
@@ -486,9 +576,10 @@
           </article>
 
           <article class="feature-card poster-card">
-            <img
+            <img width="2048" height="1536"
               src="assets/sdab-poster-thumb.jpg"
               alt="sdAb-Based DNA Immunostaining for High-Throughput Multiplexed Imaging"
+              loading="lazy"
             />
             <div>
               <p class="work-meta">2025 · RESEARCH POSTER · NIH NINDS</p>
@@ -499,7 +590,7 @@
                 fluorescence imaging — enabling high-dimensional cell state atlases and
                 quantitative analysis of cellular responses to perturbation.
               </p>
-              <a class="text-link" href="assets/sdab-poster-thumb.jpg">VIEW STILL IMAGE</a>
+              <a class="text-link" href="assets/sdab-poster-thumb.jpg" data-figure>VIEW STILL IMAGE</a>
             </div>
           </article>
 
@@ -519,8 +610,9 @@
 
       <section class="section projects-section" id="projects" data-decor="projects">
         <div class="section-heading wide">
+          <p class="eyebrow">SHIPPED / EXPLORATORY BUILDS</p>
           <h2>code garden</h2>
-          <p class="section-kicker">Public builds from GitHub: research tools, neuroeducation prototypes, and this portfolio.</p>
+          <p class="section-kicker">Smaller tools and experiments alongside the current research.</p>
         </div>
         <div class="github-panel">
           <div>
@@ -538,8 +630,8 @@
             <span>PUBLIC · CSS · GITHUB PAGES</span>
             <h3>kennysinfodump</h3>
             <p>
-              This evolving portfolio repository: a zine/Y2K research profile built for
-              LinkedIn, GitHub Pages, and research-fit context.
+              This build-free research portfolio: static HTML, responsive CSS, hash-based
+              section views, local research artifacts, and seven small discoveries.
             </p>
             <a class="text-link" href="https://github.com/siamakenna/kennysinfodump">VIEW REPO</a>
           </article>
@@ -547,27 +639,20 @@
             <span>PUBLIC · JAVASCRIPT</span>
             <h3>CommonAxon</h3>
             <p>
-              Health equity research search prototype for brain-health papers, clinical trials,
-              resources, and reflective research notes.
+              A brain-health equity research prototype with live PubMed and ClinicalTrials.gov
+              search, reflective research notes, accessible display settings, and data exports.
+              Atlas visualizations use sample data; this is not a validated clinical system.
             </p>
             <a class="text-link" href="https://github.com/siamakenna/commonaxon">VIEW REPO</a>
             <a class="text-link" href="https://siamakenna.github.io/commonaxon/">LIVE DEMO</a>
           </article>
           <article class="project-card">
-            <span>PUBLIC · JAVASCRIPT · GITHUB PAGES</span>
-            <h3>Soft Recall Game</h3>
-            <p>
-              A quiet point-and-click neuroeducation game prototype about memory, routine,
-              and care.
-            </p>
-            <a class="text-link" href="https://github.com/siamakenna/soft-recall-game">VIEW REPO</a>
-          </article>
-          <article class="project-card">
             <span>PUBLIC · JAVASCRIPT</span>
             <h3>GardenByte</h3>
             <p>
-              A garden-coded creative build space where cozy interface experiments can grow
-              beside science and data projects.
+              A React / Vite web toy that turns a name or personal association into a symbolic
+              watercolor-pixel garden. Seeded generation, keyboard-accessible discoveries,
+              a local garden journal, and downloadable artwork.
             </p>
             <a class="text-link" href="https://github.com/siamakenna/gardenbyte">VIEW REPO</a>
           </article>
@@ -578,8 +663,17 @@
       <section class="section awards-section" id="awards" data-decor="awards" data-sdk-section="awards">
         <span class="glow-orb orb-six" aria-hidden="true"></span>
         <div class="section-heading">
-          <h2>some shiny things</h2>
+          <p class="eyebrow">SELECTED MILESTONES</p>
+          <h2>recently</h2>
         </div>
+        <ul class="milestone-list">
+          <li><span>FALL 2026</span><div><strong>NECB · SACNAS · SfN</strong><p>Accepted research presentations; attending and presenting at all three. <a href="#trail">Dates + conference route →</a></p></div></li>
+          <li><span>2026</span><div><strong>Central US Synthetic Biology Workshop</strong><p>Perturb-LM abstract accepted · unable to attend or present.</p></div></li>
+          <li><span>SEPT 2026</span><div><strong>Soft Recall · v0.3.0</strong><p>Published interactive narrative with three endings, saved progress, and documented release QA. <a href="#soft-recall">Explore the release →</a></p></div></li>
+          <li><span>2026</span><div><strong>Neuromatch Computational Neuroscience</strong><p>Completed training and neural population analysis project. <a href="#training">Training + project →</a></p></div></li>
+          <li><span>APR 2026</span><div><strong>NIH Postbac Poster Day · 5-120</strong><p>Immunostaining Coupled Branch Amplification. <a href="https://www.training.nih.gov/documents/129/PPD-Program_Book_2026_v6.pdf#page=79">NIH program book ↗</a></p></div></li>
+        </ul>
+        <details class="earlier-archive"><summary>Earlier milestones / 2018–2023</summary>
         <div class="awards-grid">
           <article>
             <span>SEPT 2023</span>
@@ -597,6 +691,7 @@
             <p>AACYGF</p>
           </article>
         </div>
+        </details>
         <button class="secret-gem data-gem" type="button" data-secret="Unlocked: data note — the model is only as useful as the questions, assumptions, and validation behind it." aria-label="Unlock hidden data note"></button>
       </section>
 
@@ -608,114 +703,17 @@
         </svg>
         <div class="section-heading wide">
           <h2>my toolkit</h2>
-          <p class="section-kicker">A quieter map of how I can be useful in a neuro / molecular research space.</p>
+          <p class="section-kicker">Methods, practices, and tools I bring to a research workflow.</p>
         </div>
-        <div class="lab-value-map" aria-label="How Makenna can support a research lab">
-          <article>
-            <span>01</span>
-            <h3>wet lab to data handoff</h3>
-            <p>I can move between sample-facing protocols, imaging outputs, spreadsheet cleanup, and computational interpretation without treating those steps like separate worlds.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>careful systems thinking</h3>
-            <p>My strongest fit is in projects where biological detail, measurement reliability, documentation, and communication all affect whether the science is usable.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>research culture support</h3>
-            <p>I bring the less flashy lab habits too: asking better questions, keeping work reproducible, respecting training, and helping translate complex methods for different audiences.</p>
-          </article>
+        <div class="toolkit-grid">
+          <article><h3>Computational research</h3><p class="tool-languages">Python · R · MATLAB · SQL · UNIX · Java</p><ul><li>Benchmark design and leakage-aware evaluation</li><li>Retrieval evaluation and model comparison</li><li>Held-out splits and bootstrap uncertainty</li><li>Metadata auditing, error analysis, and reproducible experiment documentation</li></ul></article>
+          <article><h3>Bioimage analysis</h3><ul><li>Quantitative imaging and longitudinal neuron tracking</li><li>Phenotype quantification and ROI-based analysis</li><li>Image QC and segmentation-aware workflows</li><li>Microscopy metadata and volumetric biomarkers</li></ul></article>
+          <article><h3>Molecular / experimental</h3><ul><li>Immunofluorescence, single-domain antibodies, and DNA branch amplification</li><li>Multiplexed imaging</li><li>3D spheroids, cryopreservation, and thaw workflows</li><li>Micro-invasive neural probes and conductive materials</li></ul></article>
+          <article><h3>Research software + data practice</h3><ul><li>Git, GitHub, and versioned research artifacts</li><li>Reproducibility checks and structured documentation</li><li>Collaborator handoffs</li><li>Public-safe research outputs</li></ul></article>
+          <article><h3>Scientific building</h3><ul><li>Interactive science communication</li><li>Accessibility-aware interfaces</li><li>Cross-browser QA</li><li>Research-informed educational tools</li></ul></article>
+          <article><h3>Project / lab operations</h3><ul><li>Project coordination and research administration exposure</li><li>Budgeting / compliance awareness</li><li>Onboarding workflows and data systems</li><li>Technical mentoring and scientific communication</li></ul></article>
         </div>
-        <div class="skills-grid expanded-toolkit">
-          <article>
-            <h3>languages</h3>
-            <p><strong>Native:</strong> English</p>
-            <p><strong>Working proficiency:</strong><br />Spanish, Hebrew, American Sign Language</p>
-          </article>
-          <article>
-            <h3>code + quantitative tools</h3>
-            <div class="pill-list">
-              <span>R</span>
-              <span>PYTHON</span>
-              <span>MATLAB</span>
-              <span>SQL</span>
-              <span>UNIX</span>
-              <span>JAVA</span>
-              <span>MICROSOFT OFFICE</span>
-              <span>GOOGLE SUITE</span>
-            </div>
-          </article>
-          <article>
-            <h3>neuro + imaging analysis</h3>
-            <div class="pill-list">
-              <span>QUANTITATIVE IMAGING</span>
-              <span>VOLUMETRIC BIOMARKERS</span>
-              <span>BRAIN VOLUME OUTCOMES</span>
-              <span>CLN3 / BATTEN DISEASE</span>
-              <span>DATA INTERPRETATION</span>
-            </div>
-          </article>
-          <article>
-            <h3>molecular + cell systems</h3>
-            <div class="pill-list">
-              <span>IMMUNOFLUORESCENCE</span>
-              <span>MULTIPLEXED IMAGING</span>
-              <span>sdAb METHODS</span>
-              <span>DNA AMPLIFICATION</span>
-              <span>3D SPHEROIDS</span>
-            </div>
-          </article>
-          <article>
-            <h3>bench workflows</h3>
-            <div class="pill-list">
-              <span>CRYOPRESERVATION</span>
-              <span>THAW PROTOCOLS</span>
-              <span>INDEPENDENT EXPERIMENTATION</span>
-              <span>PROTOCOL TROUBLESHOOTING</span>
-              <span>LAB SAFETY</span>
-            </div>
-          </article>
-          <article>
-            <h3>neural engineering</h3>
-            <div class="pill-list">
-              <span>MICRO-INVASIVE PROBES</span>
-              <span>CONDUCTIVE MATERIALS</span>
-              <span>SIGNAL STABILITY</span>
-              <span>IMPEDANCE THINKING</span>
-              <span>FABRICATION FEASIBILITY</span>
-            </div>
-          </article>
-          <article>
-            <h3>research operations</h3>
-            <div class="pill-list">
-              <span>BUDGETING</span>
-              <span>COMPLIANCE</span>
-              <span>PROPOSAL EXPOSURE</span>
-              <span>DATA SYSTEMS</span>
-              <span>DOCUMENTATION</span>
-            </div>
-          </article>
-          <article>
-            <h3>communication + ethics</h3>
-            <div class="pill-list">
-              <span>SCIENCE COMMUNICATION</span>
-              <span>METHODS FEEDBACK</span>
-              <span>ETHICS + BIAS</span>
-              <span>ACCESSIBILITY</span>
-              <span>MENTORSHIP READINESS</span>
-            </div>
-          </article>
-          <article>
-            <h3>certifications</h3>
-            <div class="pill-list">
-              <span>CPR/AED/FIRST AID</span>
-              <span>STOP THE BLEED</span>
-              <span>BLOODBORNE PATHOGENS</span>
-              <span>LAB SAFETY</span>
-            </div>
-          </article>
-        </div>
+        <div class="toolkit-footnotes"><div><h3>Certifications / safety</h3><p>CPR/AED/First Aid · Stop the Bleed · Lab Safety · Bloodborne Pathogens</p></div><div><h3>Languages</h3><p>Native: English. Working proficiency: Spanish, Hebrew, American Sign Language.</p></div></div>
         <button class="secret-gem asl-gem" type="button" data-secret="Unlocked: access note — communication is part of experimental design, not an add-on." aria-label="Unlock hidden access note"></button>
       </section>
 
@@ -744,10 +742,16 @@
     </main>
 
     <footer class="site-footer">
-      <p>MADE WITH PYTHON, BLUE INK &amp; WAY TOO MANY OPEN TABS · © 2026 MAKENNA RODRIGUEZ</p>
+      <p>BLUE INK &amp; WAY TOO MANY OPEN TABS · © <span data-year>2026</span> MAKENNA RODRIGUEZ<br /><a href="#home">BACK TO HOME</a> · CONTENT REFRESH / SEPTEMBER 2026</p>
       <p class="secret-status" aria-live="polite">hidden gems: 0 / 7</p>
     </footer>
 
+    <dialog class="figure-dialog" aria-labelledby="figure-title">
+      <div class="figure-toolbar"><h2 id="figure-title">Research figure</h2><button class="figure-close" type="button" aria-label="Close research figure">×</button></div>
+      <div class="figure-scroll" tabindex="0" role="region" aria-label="Research figure, scroll to inspect"><img alt="" /></div>
+      <a class="figure-original" href="assets/sdab-poster-thumb.jpg">OPEN ORIGINAL IMAGE ↗</a>
+    </dialog>
+    <div class="secret-toast" role="status" aria-live="polite"></div>
     <script src="script.js"></script>
   </body>
 </html>
